@@ -41,6 +41,12 @@ int main(int argc, char ** argv)
 		result = result*2;
 	}
 
+	if (result < 0)
+	{
+		fprintf(stderr, "Invalid arguments \n");
+		return -1;
+	}
+
 	printf("%d percent chance of winning \n",result);
 
 	return 0;
